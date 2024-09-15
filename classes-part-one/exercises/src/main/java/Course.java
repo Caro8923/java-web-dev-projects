@@ -5,10 +5,10 @@ public class Course {
     private Teacher instructor;
     private ArrayList<Student> enrolledStudents;
 
-    public Course(String topic, Teacher instructor, ArrayList<Student>); {
+    public Course (String topic, Teacher instructor, ArrayList<Student> enrolledStudents) {
         this.topic = topic;
         this.instructor = instructor;
-        //this.Student = Student;
+        this.enrolledStudents = enrolledStudents;
 
     }
 }

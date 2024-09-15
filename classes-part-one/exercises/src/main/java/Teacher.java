@@ -11,35 +11,52 @@ public class Teacher {
         this.yearsTeaching = yearsTeaching;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String toString() {
+        return "Teacher{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", subject='" + subject + '\'' +
+                ", yearsTeaching=" + yearsTeaching +
+                '}';
+
+        public String getFirstName () {
+            return firstName;
+        }
+
+        private void setFirstName (String firstName){
+            this.firstName = firstName;
+        }
+
+        public String getLastName () {
+            return lastName;
+        }
+
+        private void setLastName (String lastName){
+            this.lastName = lastName;
+        }
+
+        public String getSubject () {
+            return subject;
+        }
+
+        private void setSubject (String subject){
+            this.subject = subject;
+        }
+
+        public Double getYearsTeaching () {
+            return yearsTeaching;
+        }
+
+        private void setYearsTeaching (Double yearsTeaching){
+            this.yearsTeaching = yearsTeaching;
+        }
+
+
     }
 
-    private void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
+    public static void main(String[] args) {
 
-    public String getLastName() {
-        return lastName;
-    }
-
-    private void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public String getSubject() {
-        return subject;
-    }
-
-    private void setSubject(String subject) {
-        this.subject = subject;
-    }
-
-    public Double getYearsTeaching() {
-        return yearsTeaching;
-    }
-
-    private void setYearsTeaching(Double yearsTeaching) {
-        this.yearsTeaching = yearsTeaching;
     }
 }
+
+
