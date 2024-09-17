@@ -1,20 +1,20 @@
 package org.launchcode;
 
 public class MenuItem {
-    private String name;
-    private float price;
-    private String description;
-    private String category;
-    private boolean isNew;
+    String name;
+    Double price;
+    String description;
+    String category;
+    boolean isNew;
 
-    public MenuItem() {String name, float price, String description, String category, boolean IsNew) {
+    public MenuItem(String name, Double price, String description, String category, boolean IsNew) {
 
         this.name = name;
         this.price = price;
         this.description = description;
         this.category = category;
         this.isNew = isNew;
-    }
+
 
 }
 
@@ -26,11 +26,11 @@ public class MenuItem {
         this.name = name;
     }
 
-    public float getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
 
@@ -56,5 +56,20 @@ public class MenuItem {
 
     public void setNew(boolean aNew) {
         isNew = aNew;
+    }
+
+    public boolean equals(MenuItem itemToCompare) {
+        return this.description.equals(itemToCompare.description);
+    }
+
+    @Override
+    public String toString() {
+        return "MenuItem{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", description='" + description + '\'' +
+                ", category='" + category + '\'' +
+                ", isNew=" + isNew +
+                '}';
     }
 }
