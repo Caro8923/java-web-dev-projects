@@ -21,8 +21,8 @@ public class Main {
 
 
         // TODO: Print the 'flavors' and 'cones' lists (in a clear manner) to verify the sorting.
-
-        System.out.println(flavors);
         System.out.println(cones);
+        System.out.println(flavors);
+
     }
 }
