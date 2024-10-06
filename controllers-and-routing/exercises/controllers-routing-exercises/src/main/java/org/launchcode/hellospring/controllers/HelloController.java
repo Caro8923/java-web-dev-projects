@@ -15,6 +15,7 @@ public class HelloController {
 //        return "Hello " + name;
 //    }
 
+
     @RequestMapping(value="hello", method = RequestMethod.GET)
     @ResponseBody
     public String helloForm()  {
